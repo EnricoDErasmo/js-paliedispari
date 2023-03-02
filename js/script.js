@@ -94,6 +94,26 @@ evenBtn.addEventListener("click", function(){
 
 });
 
+
+
+// Prova funzione---------------------------
+
+// function isEven (num) {
+
+//     if (num % 2 == 0) {   
+
+//     return "pari";
+
+//     } else {
+
+//     return "dispari";
+
+//     }
+// }
+// --------------------------------------
+
+
+
 // Ripeto lo stesso procedimento per il button dispari ma poi inverto i risultati
 oddBtn.addEventListener("click", function(){
 

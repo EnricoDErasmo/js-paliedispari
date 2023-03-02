@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 30px;
+}
+
+.container.container-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 20px;
+
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+#even-btn, #odd-btn{
+    padding: 4px 10px;
+
+    border-radius: 20px;
+}
+
+.active{
+    background-color: blue;
+    color: white;
+}
+
