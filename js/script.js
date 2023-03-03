@@ -9,30 +9,53 @@ let userWordEl = document.getElementById("userWord");
 let btnEl = document.getElementById("btn");
 let outputEl = document.getElementById("output");
 
-// faccio in modo che la parola inserita dall'utente diventi un array di lettere...
-let letters = userWordEl.value.split("");
-// venga capovolto...
-letters = letters.reverse();
-// e torni a essere una stringa.
-reverseWord = letters.join("");
 
 // Creo un evento al click del button
 btnEl.addEventListener("click", function() {
 
-    // SE la parola inserita dall'utente è uguale alla parola che abbiamo capovolto
-    if(userWordEl.value == reverseWord){
-        //  La parola è palindroma
-        outputEl.innerHTML = "La parola da te inserita è palindroma";
-    // ALTRIMENTI
+    if (isPalindrome(userWordEl.value) == true) {
+
+        outputEl.innerHTML = "La parola è palindroma";
+
     } else {
-        // la parola non è palindroma
-        outputEl.innerHTML = "La parola da te inserita non è palindroma";
+
+        outputEl.innerHTML = "La parola non è palindroma";
+
     };
 
+    
 });
 
 
+
+// Function -------------------------------------------------
+
+function isPalindrome (word) {
+
+    // faccio in modo che la parola inserita dall'utente diventi un array di lettere...
+    let letters = word.split("");
+    // venga capovolto...
+    letters = letters.reverse();
+    // e torni a essere una stringa.
+    let = reverseWord = letters.join("");
+    
+    // SE la parola inserita dall'utente è uguale alla parola che abbiamo capovolto
+    if(word == reverseWord){
+        //  La parola è palindroma
+        return true;
+    // ALTRIMENTI
+    } else {
+        // la parola non è palindroma
+        return false;
+    };
+    
+}
+
+
 // ---------------------------------------------------------------------------------------
+
+
+
 
 /*
 Pari e Dispari
